@@ -27,7 +27,7 @@ const Profile = () => {
           <div className="profile-details-role">
             <span className="primary-text">
               <h1>
-                <Typical loop={Infinity} steps={[ "Web Developer", 1000, "UI/UX Designer", 1000, "MERN Developer", 1000, "Data Analyst", 1000 ]}/>
+                <Typical loop={Infinity} steps={[ "Web Developer", 1000, "UI/UX Designer", 1000, "MERN Developer", 1000, "Analyst", 1000 ]}/>
               </h1>
               <span className="profile-role-tagline">
                 Knack of building front-end applications using MERN
