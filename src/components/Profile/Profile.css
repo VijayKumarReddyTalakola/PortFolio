@@ -1,0 +1,155 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: fit-content;
+}
+.profile-parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    margin: 2.5rem 2rem;
+}
+.profile-details-name{
+    font-size: 1.5rem;
+    font-family: "Poppins SemiBold";
+}
+.profile-details-role{
+    display: flex;
+    flex-direction: column;
+    margin: 0.875rem 0 1.5rem 0;
+}
+.profile-details-role h1{
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+.primary-text{
+    color: var(--white);
+}
+.highlighted-text{
+    color: var(--dark-orange);
+}
+.profile-role-tagline{
+    font-size: 1.2rem;
+    margin: 0.3rem 0 0 0;
+    font-family: "Poppins Light";
+}
+.profile-options .primary-btn{
+   font-size: 0.75rem;
+}
+.profile-options .primary-btn:hover {
+    background-color: cornsilk;
+    color: #111;
+}
+.profile-options .highlighted-btn{
+    margin: 0 0 0 28;
+}
+.profile-options .highlighted-btn:hover{
+    margin: 0 0 0 28;
+    border: 0.1rem solid var(--dark-orange);
+    background-color: cornsilk;
+    color: #111;
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 23.75rem;
+    width: 23.75rem;
+    margin: 0.6rem 0rem 0 18.75rem;
+}
+.profile-picture-background img{
+    height: 90%;
+    width: 90%;
+    box-shadow: 0 0.06rem 0.06rem 0.06rem var(--white);
+    background-size: cover;
+    border-radius: 50%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.profile-picture-background img:hover{
+    transform: scale(1.08);
+    transition: 1.25s ease-in-out;
+}
+.colz-icon a{
+    color: white;
+    padding: 0.93rem;
+    padding-left: 0rem;
+    font-size: 1.25rem;
+    margin: 0.2rem;
+}
+.colz-icon a:hover{
+    transform: scale(1.5);
+}
+
+@media only screen and (min-width:710px) and (max-width:910px) {
+    .profile-picture{
+        margin: 0 0rem 0 5rem;
+    }
+    .profile-details-name{
+        font-size: 1.25rem;
+    }
+    .profile-details-role .primary-text{
+        font-size: 0.75rem;
+    }
+    .profile-options .btn{
+        width: 7.5rem;
+        padding: 0.7rem 0;
+        z-index: 700;
+    }
+}
+@media only screen and (max-width:910px) {
+    .profile-picture {
+        height: 20rem;
+        width: 20rem;
+        margin: 0 0 0 0rem;
+    }
+}
+@media only screen and (max-width:810px){
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 0.625rem 0 0 0 ;
+    }
+    .profile-options{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-details{
+        margin: 1.5rem 0 0 ;
+    }
+    .profile-options{
+        margin: 0 !important;
+    }
+    .profile-options,.profile-details-role{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:480px){
+    .profile-picture{
+        height: 17.2rem;
+        width: 17.2rem;
+        margin-top: 5.6rem;
+    }
+    .profile-details{
+        width: 90%;
+    }
+    .profile-options{
+        margin: 0 !important;
+    }
+    .profile-options .highlighted-btn {
+        font-size: 0.8rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px){
+    .profile-picture{
+        margin: 3rem;
+    }
+}

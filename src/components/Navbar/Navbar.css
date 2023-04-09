@@ -1,0 +1,105 @@
+body{
+    box-sizing: border-box;
+}
+.navbar{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    background: #080831;
+    z-index: 999;
+}
+.logo{
+    margin-top: 1rem;
+    font-size:3.1rem;
+    padding-left: 3rem;
+    font-weight: 750;
+}
+.nav-menu{
+    display: flex;
+    margin-top: 1rem;
+    list-style: none;
+}
+.nav-item{
+    font-size: 1.1rem;
+    margin-right:4rem;
+    cursor: pointer;
+}
+.nav-item:hover{
+    color: #ff5823;
+}
+.toggle-icon {
+    font-size: 2.5rem;
+    display: none;
+}
+@media only screen and (max-device-width: 480px){
+    .toggle-icon{
+        display: block;
+        position: absolute;
+        right:3.1rem;
+        top: 0;
+    }
+    .logo {
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+    }
+    .navbar{
+        z-index: 999;
+        min-height: 9vh;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height:auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch;
+        text-align: center;
+        padding: 5rem 0 2rem 0;
+        margin: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+        background: #080831;
+        text-align: center;
+        color: aliceblue;
+        /* height: 80vh; */
+        width: 100%;
+    }
+    .nav-item{
+        display: block;
+        width: 100%;
+        margin: 0.93rem 0;
+        font-size: 1.875rem;
+        z-index: 99;
+    }
+}
+@media only screen and (min-device-width: 768px)and (max-device-width:1024px){
+    .navbar{
+        max-height: 10vh;
+    }
+    .logo{
+        padding: 0rem 3.1rem;
+    }
+}
+@media only screen and (min-device-width:1024px) and (max-device-width: 1366px){
+    .navbar{
+        max-height: 15vh;
+    }
+    .logo{
+        padding-left:3.1rem;
+    }
+}
+
+

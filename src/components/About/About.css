@@ -1,0 +1,199 @@
+.about-container{
+    max-height: 100vh;
+    margin-top: 3.1rem;
+}
+.about-title{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1.25rem;
+}
+.about-title h1{
+    font-size: 2.5rem;
+    margin: 0.3rem 0.3rem 0rem 0.3rem;
+}
+.about-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0rem 20rem ;
+    height: 31.25rem;
+    min-height: fit-content;
+    box-shadow:0.2rem 0.2rem 1.25rem grey;
+}
+.about-image img{
+    width: 23rem;
+    height: 31.25rem;
+    margin-top: 0.3rem;
+}
+.about-desc{
+    justify-content: center;
+    text-align: left;
+    padding: 1.88rem;
+}
+.about-desc p,.about-desc h3{
+    margin: 0.625rem;
+}
+.about-skills{
+    margin:0.625rem 0.625rem 0.93rem 1.25rem;
+}
+@media only screen and (max-device-width: 480px){
+    .about-container {
+        margin-top: 0;
+        min-height: 75vh;
+        max-height: 100vh;
+    }
+    .about-image img ,.about-title p{
+        display: none;
+    }
+    .about-parent{
+        padding: 0.625rem;
+        box-shadow: none;
+        margin: 0.625rem;
+    }
+    .about-title{
+        margin: 1rem 0 0.5rem 0;
+        padding: 0.3rem;
+    }
+    .about-desc{
+        padding: 0.3rem;
+    }
+    .about-desc p{
+        font-size: 1.25rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding:0rem 0.625rem 0.3rem 0.625rem;
+        margin: 0.625rem 0 0.625rem 0;
+    }
+    .about-desc h3{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .about-details{
+        margin: 1.25rem 0 0 0;
+    }
+    .about-skills{
+        font-size: 1.25rem;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        padding: 0rem;
+        margin-bottom: 0rem;
+    }
+    li{
+        list-style:none
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .about-container {
+        margin:2.5rem 1rem; 
+        max-height: 75vh;
+    }
+    .about-parent {
+        margin: 0rem 3rem;
+        max-height: 50vh;
+    }
+    .about-desc{
+        padding: 0.3rem;
+    }
+    .about-desc p {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top:0.625rem;
+        padding: 0rem 0.4rem;
+    }
+    .about-image img {
+        width: 17rem;
+        max-height: 50vh;
+    }
+    .about-desc h3 {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .about-details {
+        max-height: 50vh;
+        padding:0.1rem;
+    }
+    .about-skills li{
+        margin-left: 3.125rem;
+    }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px){
+    .about-parent{
+        max-height: 50vh;
+    }
+    .about-skills{
+        margin-left: 3rem;
+    }
+    .about-desc .profile-options{
+        margin-left: 3rem;
+    }
+}
+@media only screen and (min-device-width:1024px)  and (max-device-width: 1366px){
+    .about-container {
+        margin: 1rem;
+    }
+
+    .about-parent {
+        margin: 2rem 7.5rem;
+    }
+
+    .about-desc {
+        padding: 0.25rem;
+    }
+
+    .about-desc p {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 0.625rem;
+        padding: 0rem 1.25rem;
+    }
+
+    .about-image img {
+        width: 18.75rem;
+        height: 37vh;
+        margin-top: 0.3rem;
+    }
+
+    .about-desc h3 {
+        margin-top: 0rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-details {
+        padding: 0.93rem;
+    }
+
+    .about-skills li {
+        align-items: center;
+        margin-left: 6.25rem;
+    }
+
+    .about-parent .profile-options {
+        margin-left: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 600px) {
+    .about-container{
+        min-height: 100vh;
+    }
+    .about-parent{
+        margin: 0rem 5rem;
+        min-height: 75vh;
+    }
+    .about-parent img{
+        min-height: 75vh;
+    }
+    .about-details{
+        margin-top: -7.5rem;
+    }
+}

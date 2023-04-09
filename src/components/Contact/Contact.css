@@ -1,0 +1,207 @@
+.contact-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.2rem;
+    margin-bottom: 3rem;
+}
+.contact-parent{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: fit-content;
+    margin: 0rem 15.5rem;
+    border-radius: 1.5rem;
+    background-color: #080831;
+}
+.contact-title{
+    margin:0.7rem;
+    padding: 0.7rem;
+}
+.contact-details{
+    height: 75%;
+    margin: 3rem 0.6rem 3rem 0rem;
+    padding: 0.3rem;
+}
+
+.contact-details .highlighted-text {
+    margin:1.5rem;
+    color: var(--dark-orange);
+    font-size: 2rem;
+}
+.contact-address{
+    width: 22rem;
+    height: 20rem;
+    max-height: fit-content;
+    color: whitesmoke;
+    margin: 1.8rem 0 1.5rem 3rem;
+}
+.contact-info{
+    padding: 0.6rem;
+    display: flex;
+    margin:1.25rem 0rem;
+}
+.contact-info span{
+    margin-left:1.25rem;
+}
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem  0rem 2rem;
+    background-color: whitesmoke;
+    border-radius: 0.6rem;
+    height: 25rem;
+    width: 25rem;
+}
+form {
+    margin: 0.6rem;
+}
+input {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border: 0.03rem solid gray;
+    margin: 0.9rem 0rem;
+    font-size: 0.9rem;
+    padding-left: 0.6rem;
+    color: black;
+    border-radius: 0.6rem;
+}
+textarea {
+    width: 90%;
+    height: 30%;
+    margin: 0.9rem 0rem;
+    font-size: 0.9rem;
+    padding-left: 0.6rem;
+    border: none;
+    color: black;
+    border: 0.03rem solid gray;
+    border-radius: 0.6rem;
+}
+button {
+    margin-top:1.25rem;
+    border: none;
+    padding: 0.9rem;
+    background-color: #ff5823;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    width: 52.5%;
+    text-align: center;
+    border-radius: 0.9rem;
+}
+/* Mobile Screen */
+@media only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+    .contact-container{
+        max-height: 100vh;
+        margin: 0rem;
+        padding: 0;
+    }
+    .contact-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: aliceblue;
+        padding: 0rem 0.3rem;
+        border-radius: 0;
+        margin: 0rem;
+    }
+    .contact-details{
+        margin: 0 0.6rem;
+        max-width: 100vw;
+    }
+    .contact-details .highlighted-text{
+        display: none;
+    }
+    .contact-details .colz{
+        margin: 1rem;
+    }
+    .contact-address{
+        margin: 0rem;
+        height: 50%;
+    }
+    .contact-info{
+        margin: 0.3rem;
+    }
+    .contact-title {
+        margin: 0rem;
+        font-family: "Poppins SemiBold";
+    }
+    .contact-title p{
+        display: none;
+    }
+    .contact-form {
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-radius: 0.6rem;
+        padding: 0.3rem;
+        width: 80%;
+        margin: 0 1.5rem 2.5rem 1.8rem;
+    }
+}
+/* Tab,Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .contact-container {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 1.5rem;
+        max-height: 60vh;
+    }
+    .contact-parent {
+        display: flex;
+        align-items: center;
+        color: aliceblue;
+        margin:1.25rem 3rem 3rem 3rem ;
+    }
+    .contact-details{
+        max-width: 50%;
+        margin: 0.6rem 1.8rem 0.6rem 1.25rem; 
+    }
+    .contact-address{
+        padding: 0.3rem;
+        margin:1.25rem 0rem;
+        width: 100%;
+    }
+    .contact-form {
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-radius: 0.6rem;
+        width: 100%;
+        margin: 3rem 1.25rem 3rem 0.3rem;
+        padding: 0.6rem;
+    }
+}
+@media only screen and (min-device-width:820px) and (max-device-width: 1180px){
+    .contact-container{
+        max-height: 80vh;
+    }
+    .contact-parent{
+        margin: 1.8rem 5rem;
+    }
+    .contact-form{
+        margin: 1rem 1.25rem;
+    }
+    .contact-details{
+        width: 50%;
+        height: 60%;
+    }
+}
+@media only screen and (min-device-width:1024px)and (max-device-width:1366px) {
+    .contact-container{
+        max-height: 80vh;
+    }
+    .contact-parent{
+        margin: 1.8rem 7rem;
+    }
+    .contact-form{
+        margin: 1rem 1.25rem;
+    }
+    .contact-details{
+        height: 60%;
+    }
+}

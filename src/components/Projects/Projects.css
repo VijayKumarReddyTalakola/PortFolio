@@ -1,0 +1,211 @@
+.projects-container{
+    margin: 2.5rem 15.5rem;
+}
+.project-page {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.projects{
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project{
+    border-radius: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    margin: 1.5rem;
+    height: 16.5rem;
+    width: 15rem;
+    box-shadow: 0.2rem 0.2rem 0.9rem grey;
+}
+.project img{
+    margin-top: 0.9rem;
+    width: 100%;
+    display: block;
+    border-radius: 0.6rem;
+}
+.project-desc {
+    color: white;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(8, 2, 50, 0.879));
+    border-radius: 0.6rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0rem;
+    transition: height 0.5s;
+}
+.project-links{
+    display: flex;
+    margin: 1.9rem;
+}
+.project-desc h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin:  1.9rem 0.9rem 0.6rem 0.9rem;
+}
+.project-desc a{
+    color :rgba(8, 2, 50, 0.879);
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height:3rem;
+    background: whitesmoke;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    margin: 0.6rem 1.25rem;
+    text-align: center;
+}
+.project:hover .project-desc{
+    height: 100%;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .projects-container {
+        margin: 0rem;
+    }
+    .project-page p{
+        display: none;
+    }
+    .projects{
+        padding: 0.6rem;
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .project-desc p{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0rem 1.25rem 1.25rem 1.25rem;
+        margin: 0.6rem 0 0 0;
+    }
+    .project-desc h3{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .projects-container{
+        margin: 1.25rem 3rem;
+    }
+    .projects{
+        padding: 0.3rem;
+        margin-top: 0;
+        box-shadow: none;
+        margin: 0.5rem;
+    }
+    .project {
+        width: 25%;
+        height: 50%;
+        border-radius: 0.6rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.2rem 0.2rem 0.9rem grey;
+        margin: 1rem;
+    }
+    .project img {
+        margin-top: 0.9rem;
+        width: 100%;
+        display: block;
+        border-radius: 0.6rem;
+    }
+    .project-desc h3{
+        margin-top: 3rem;
+        font-size: 0.75rem;
+    }
+    .project-desc p{
+        font-size: 0.75rem;
+    }
+    .project-desc a{
+        margin: 0rem 1rem 1rem 1rem;
+        line-height: 2.1rem;
+        font-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) {
+    .projects-container{
+        margin: 3rem 4rem 2.5rem 4rem;
+    }
+    .projects{
+        padding: 0.3rem;
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .project {
+        width: 25%;
+        height: 50%;
+        border-radius: 0.6rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.2rem 0.2rem 0.9rem grey;
+    }
+    .project img {
+        margin-top: 0.9rem;
+        width: 100%;
+        display: block;
+        border-radius: 0.6rem;
+    }
+    .project-desc h3 {
+        margin-top: 3rem;
+        font-size: 0.75rem;
+    }
+    .project-desc p {
+        font-size: 0.75rem;
+    }
+    .project-desc a {
+        margin: 0rem 1rem 1rem 1rem;
+        line-height: 2.1rem;
+        font-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width:1366px) {
+    .projects-container {
+        margin: 1.25rem 2.5rem;
+    }
+
+    .projects {
+        padding: 0.3rem;
+        margin-top: 0;
+        box-shadow: none;
+        margin: 1.25rem;
+    }
+
+    .project {
+        border-radius: 0.6rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.2rem 0.2rem 0.9rem grey;
+    }
+
+    .project-desc h3{
+        font-size: 1.25rem;
+    }
+    .project-desc p{
+        font-size: 0.85rem;
+    }
+    .project img {
+        margin-top: 0.9rem;
+        width: 100%;
+        display: block;
+        border-radius: 0.6rem;
+    }
+}
+
