@@ -23,7 +23,6 @@
     box-shadow: 0.2rem 0.2rem 0.9rem grey;
 }
 .project img{
-    margin-top: 0.9rem;
     width: 100%;
     display: block;
     border-radius: 0.6rem;
@@ -116,7 +115,6 @@
         margin: 1rem;
     }
     .project img {
-        margin-top: 0.9rem;
         width: 100%;
         display: block;
         border-radius: 0.6rem;
@@ -155,7 +153,6 @@
         box-shadow: 0.2rem 0.2rem 0.9rem grey;
     }
     .project img {
-        margin-top: 0.9rem;
         width: 100%;
         display: block;
         border-radius: 0.6rem;
@@ -202,7 +199,6 @@
         font-size: 0.85rem;
     }
     .project img {
-        margin-top: 0.9rem;
         width: 100%;
         display: block;
         border-radius: 0.6rem;
